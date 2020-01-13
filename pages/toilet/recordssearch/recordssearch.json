@@ -1,0 +1,8 @@
+{
+  "navigationBarBackgroundColor": "#333333",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "查询筛选",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "dark",
+  "usingComponents": {}
+}

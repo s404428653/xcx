@@ -1,0 +1,34 @@
+/* components/zlShop/zlShop.wxss */
+
+.hor-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  flex: 1;
+  font-family: Source Han Sans CN;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.img1 {
+  width: 320rpx;
+  height: 320rpx;
+  margin-left: 38rpx;
+}
+
+.img2 {
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.img3 {
+  width: 320rpx;
+  height: 150rpx;
+}

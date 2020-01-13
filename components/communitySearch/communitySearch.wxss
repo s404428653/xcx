@@ -1,0 +1,120 @@
+/* components/communitySearch/communitySearch.wxss */
+
+/*弹层*/
+
+.local-layer {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%；;
+  background: #fff;
+  position: fixed;
+  padding-top: 16rpx;
+}
+
+/*水平行*/
+
+.hor-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/*社区检索行*/
+
+.local-search-line {
+  border-bottom: 2rpx solid rgba(228, 228, 228, 1);
+  padding-bottom: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+.icon-arrow {
+  width: 0;
+  height: 0;
+  border-width: 10rpx;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+  margin-left: 10rpx;
+}
+
+.search-box {
+  width: 500rpx;
+  height: 50rpx;
+  background: rgba(228, 228, 228, 1);
+  opacity: 1;
+  font-size: 28rpx;
+  border-radius: 8rpx;
+  align-items: center;
+  margin-left: 24rpx;
+  padding-left: 20rpx;
+}
+
+.local-icon {
+  width: 36rpx;
+  height: 36rpx;
+  margin: 12rpx 10rpx 12rpx 20rpx;
+}
+
+/*地区文字*/
+
+.name-area {
+  font-size: 28rpx;
+}
+
+/*社区弹层小图标*/
+
+.icon-cmty {
+  width: 24rpx;
+  height: 24rpx;
+  margin-right: 4rpx;
+}
+
+/*最近访问社区*/
+
+.last-comtys {
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  font-weight: bold;
+  padding-bottom: 30rpx;
+  border-bottom: 2rpx solid rgba(228, 228, 228, 1);
+}
+
+/*社区行*/
+
+.cmty-line {
+  font-size: 24rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  opacity: 1;
+  margin-top: 26rpx;
+}
+
+.tag1 {
+  background: rgba(255, 212, 40, 1);
+  opacity: 1;
+  border-radius: 12rpx;
+  margin-left: 10rpx;
+  padding: 2rpx 20rpx;
+  color: #fff;
+}
+
+.tag2 {
+  background: rgba(93, 101, 157, 1);
+  opacity: 1;
+  border-radius: 12rpx;
+  margin-left: 10rpx;
+  padding: 2rpx 20rpx;
+  color: #fff;
+}
+
+/*添加社区*/
+
+.addCmuty {
+  font-size: 13px;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  line-height: 23px;
+  color: rgba(26, 142, 234, 1);
+}

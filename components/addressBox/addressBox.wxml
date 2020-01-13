@@ -1,0 +1,13 @@
+<!--获取用户信息框-->
+<view style='padding: 32rpx 38rpx;background: #fff;'>
+  <view class='hor-line' style='margin-bottom: 42rpx;'>
+    <image class='grant-logo' src='../../image/login/login_grant_logo.png'></image>
+    <text class='grant-tip1'>千迹预约</text>
+    <text class='grant-tip2'>申请</text>
+  </view>
+  <text class='grant-tip3'>获取您的位置信息</text>
+  <view class='hor-line' style='margin-top: 60rpx;justify-content:space-between;'>
+    <button class='btn-reject' bindtap='reject'>拒绝</button>
+    <button class='btn-allow'  lang="zh_CN" bindtap="onGotUserInfo">允许</button>
+  </view>
+</view>

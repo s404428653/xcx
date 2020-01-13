@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/index/index",
+    "pages/toilet/records/records",
+    "pages/toilet/recordssearch/recordssearch",
+    "pages/toilet/sign/sign",
+    "pages/toilet/details/details",
+    "pages/toilet/check/check",
+    "pages/toilet/inspect/inspect",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

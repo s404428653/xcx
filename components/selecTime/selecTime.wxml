@@ -1,0 +1,8 @@
+<!--components/selecTime/selecTime.wxml-->
+<!-- 选择时间 -->
+
+<picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange"
+    value="{{multiIndex}}" range="{{multiArray}}">
+    <input  style="width:500rpx;"  disabled value='{{orderData}}' placeholder='选择时间'/>
+    <image class="" src="/image/info/info-msg-btm.png"></image>
+</picker>

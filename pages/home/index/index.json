@@ -1,0 +1,9 @@
+{
+  "navigationBarBackgroundColor": "#333333",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "厕所革命",
+  "backgroundColor": "#ffffff",
+  "backgroundTextStyle": "dark",
+  "usingComponents": {
+  }
+}

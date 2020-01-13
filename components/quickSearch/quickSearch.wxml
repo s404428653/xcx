@@ -1,0 +1,17 @@
+<!--快速选择组件-->
+<view style='width: {{ wd }}; height: {{ hg }};position: relative;'>
+  <!--查询区-->
+  <scroll-view style='height: 100%;' scroll-with-animation="true" scroll-y="true" scroll-into-view="{{ key }}">
+    <view wx:for="{{ listData }}" wx:key="id" id="{{ item.id }}">
+      <text class='lab-key'>{{ item.id }}</text>
+      <view class='sub-list'>
+        <block wx:for="{{ item.child }}" wx:key="sid"  wx:for-item="child" >
+          <view class='sub-item {{ checkUse&&!child.use? "un-active": "" }}' data-item="{{ child }}" bindtap="chooseItem">{{ child.name }}</view>
+        </block>
+      </view>
+    </view>
+  </scroll-view>
+  <view class='index-list'>
+    <view class='index-key' wx:for="{{ keys }}" wx:key="*this" data-key='{{ item }}' bindtap='scrollToKey'>{{ item }}</view>
+  </view>
+</view>

@@ -1,0 +1,21 @@
+<!--城市选择弹框-->
+<view class='' style='height: {{ hg }}px;'>
+  <view id='top-box' style='padding-top: 16rpx;'>
+    <view class='hor-line local-search-line'>
+      <view class='icon-arrow'></view>
+      <view class='hor-line search-box'>
+        <image style='width:24rpx;height: 24rpx;margin-right: 10rpx;' src='https://wxhl-image.oos-js.ctyunapi.cn/home_community_icon_search@oosImage%7C60h'></image>
+        <input placeholder='请输入名称' maxlength='20' style='width: 100%;' bindinput='cityChange'></input>
+      </view>
+    </view>
+    <view class=''>
+      <view class='hor-line local-search-line'>
+        <image class='local-icon' src='https://wxhl-image.oos-js.ctyunapi.cn/home_community_icon_local@oosImage%7C60h'></image>
+        <text class='name-area' style='margin-right: 20rpx;'>当前定位城市</text>
+        <text class='name-area' bindtap='chooseCity'>{{ curCity.shortname }}</text>
+      </view>
+    </view>
+  </view>
+
+  <local-search listData="{{ citys }}" hg="{{ scrollHg }}" bind:result="cityResult"></local-search>
+</view>

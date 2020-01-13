@@ -1,0 +1,78 @@
+<scroll-view class="content-box" scroll-y style='height:{{scnHt - 80}}px;'>
+<view>
+  <view class="demo1">
+    <text>辖区单位：行唐县南桥镇北桥村</text>
+  </view>
+  <view class="demo2"></view>
+  <view class="demo1">
+    <text>门牌号：</text>
+  </view>
+  <view class="demo2"></view>
+  <view class="demo1">
+    <text>户名：康金震</text>
+  </view>
+  <view class="demo2"></view>
+  <view class="demo1">
+    <text>家庭人口：3</text>
+  </view>
+  <view class="demo2"></view>
+  <view class="demo1">
+    <text>联系电话：13533215548</text>
+  </view>
+  <view class="demo2"></view>
+  <view class="demo1">
+    <text>户编号：123</text>
+  </view>
+  <view class="demo2"></view>
+  <view class="demo1">
+    <text>身份证：130102198777850214</text>
+  </view>
+  <view class="demo2"></view>
+  <view class="demo1">
+    <text>是否闲置：否</text>
+  </view>
+  <view class="demo2"></view>
+  <view class="demo1">
+    <text>改造状态：未改造</text>
+  </view>
+  <view class="demo2"></view>
+  <view class="demo1">
+    <text>任务年份：2019</text>
+  </view>
+  <view class="demo2"></view>
+  <view class="demo1">
+    <text>改造类型：三格式</text>
+  </view>
+  <view class="demo2"></view>
+  <view class="demo1">
+    <text>施工队名称：</text>
+  </view>
+  <view class="demo2"></view>
+  <view class="demo1">
+    <text>化粪池材料：</text>
+  </view>
+  <view class="demo2"></view>
+  <view class="demo1">
+    <text>厕房类型：</text>
+  </view>
+  <view class="demo2"></view>
+  <view display="flexed">
+      <image class="toiletfind" src="../../../image/no.jpg"></image>
+      <image class="toiletself" src="../../../image/no.jpg"></image>
+      <image class="toiletdo" src="../../../image/no.jpg"></image>
+      </view>
+      <view>
+        <text class="pic1">身份证照片</text>
+        <text class="pic2">大门照片</text>
+        <text class="pic3">改造前照片</text>
+      </view>
+      <view>
+      <image class="toiletshow" src="../../../image/no.jpg"></image>
+      <image class="toiletself" src="../../../image/no.jpg"></image>
+      </view>
+      <view>
+        <text class="pic1">改造中照片</text>
+        <text class="pic2">改造后照片</text>
+      </view>
+</view>
+</scroll-view>

@@ -1,0 +1,45 @@
+/* components/learnBox/learnBox.wxss */
+
+.container {
+  font-family: Source Han Sans CN;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+/*水平线布局*/
+
+.hor-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.course-img {
+  width: 224rpx;
+  height: 146rpx;
+  margin: 34rpx 30rpx 34rpx 26rpx;
+}
+
+.cour-name {
+  font-size: 28rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  line-height: 48rpx;
+  color: rgba(0, 0, 0, 1);
+  opacity: 1;
+  margin-bottom: 30rpx;
+}
+
+.cour-tip {
+  font-size: 20rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 300;
+  line-height: 34rpx;
+  color: rgba(0, 0, 0, 1);
+  opacity: 1;
+}

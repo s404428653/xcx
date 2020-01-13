@@ -1,0 +1,127 @@
+/* components/regTipTemplate/regTipTemplate.wxss */
+
+.tmp-layer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.dark-layer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.6;
+  z-index: -1;
+  text-align: center;
+}
+
+.sys-titIcon {
+  width: 532rpx;
+  height: 578rpx;
+  display: block;
+  margin: 19% auto 0;
+}
+
+.btn-go-reg{
+  width: 320rpx;
+  height: 95rpx;
+  line-height: 95rpx;
+  color: #fff;
+  font-size: 32rpx;
+  text-align: center;
+  margin: 40rpx auto;
+  border-radius: 40rpx;
+  background: #048165;
+}
+
+.btn-go-login{
+  font-size: 32rpx;
+  text-align: center;
+  margin: 28rpx auto;
+  text-decoration: underline;
+  color: #fff;
+}
+
+.icon-close{
+  width: 28rpx;
+  height: 28rpx;
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+  font-size: 28rpx;
+}
+
+.rul-box{
+  background: #fff;
+  width: 670rpx;
+  height: 652rpx;
+  border-radius: 20rpx;
+  position: relative;
+  margin: 30% auto;
+  text-align: center;
+  padding-top: 30rpx;
+}
+
+.rul-tit{
+  font-size: 28rpx;
+}
+
+.rul-ld{
+  width: 222rpx;
+  height: 184rpx;
+  margin: 0rpx auto 20rpx ;
+}
+
+.txt-rule{
+  font-size: 28rpx;
+  overflow-y: scroll;
+  height: 300rpx;
+  width: 580rpx;
+  margin: 32rpx auto 30rpx;
+  display: block;
+  text-align: left;
+}
+
+.rul-footer{
+  font-size: 22rpx;
+}
+
+
+
+/* no data */
+.tip-box{
+ margin: 240rpx auto 130rpx;
+ text-align: center;
+}
+
+.line-tip{
+  width: 136rpx;
+  height: 6rpx;
+  background: #E4E4E4;
+}
+
+.no-data{
+  width: 112rpx;
+  height: 146rpx;
+  margin: -70rpx 60rpx;
+}
+
+.txt-tip{
+  color: #999999;
+  font-size: 28rpx;
+  text-align: center;
+}
+
+
+.bottom-img{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}

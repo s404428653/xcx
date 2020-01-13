@@ -1,0 +1,47 @@
+/* components/quickSearch/quickSearch.wxss */
+
+.lab-key {
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  line-height: 23px;
+  color: #C1C1C1;
+  opacity: 1;
+}
+
+.sub-list {
+  margin: 50rpx 50rpx;
+}
+
+.sub-item {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  opacity: 1;
+  border-bottom: 2rpx solid #ccc;
+  padding-bottom: 26rpx;
+  padding-top: 26rpx;
+}
+
+.index-list{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50rpx;
+  height: 100%;
+  color: #1A8EEA;
+  font-size: 20rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.index-key{
+   margin-top: 2rpx;
+}
+
+.un-active{
+  color: #C1C1C1;
+}

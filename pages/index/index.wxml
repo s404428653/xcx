@@ -1,0 +1,39 @@
+<view class="container login-index-bg" style='height: {{scnHt}}px;'>
+  <!--背景图-->
+  <image class='layer' mode='width' src='https://wxhl-image.oos-js.ctyunapi.cn/login_bg_index'></image>
+  <!--背景遮罩-->
+  <view class='layer dark'></view>
+  <!--注册-->
+  <form>
+    <view class='layer'>
+      <view class='container'>
+        <view class='reg-top'>
+          <view class='reg-w1'>厕所革命</view>
+          <view class='reg-w1'>您好，欢迎登陆</view>
+        </view>
+        <view class='reg-below'>
+          <!-- <view class='reg-w3'>手机号码</view> -->
+          <view class='hor-line reg-input'>
+            <input type='number' placeholder='用户名' bindinput='bindKeyMobile' bindblur="checkPhoneNumber" value='' class='tel-input'></input>
+          </view>
+          
+         
+          <!-- <view class='reg-w3'>验证码</view> -->
+          <view class='hor-line reg-input'>
+            <input class='tel-input' placeholder='请输入密码' password="{{encrip}}" maxlength="20" value=''  bindinput='bindKeyPwd' style='flex: 1;'></input>
+            <view class="pswd-icon-box" bindtap="changePwdEncrip">
+              <image wx:if="{{encrip}}" class='pwd-icon' src='' ></image>
+              <image wx:else class='pwd-icon' src=''></image>
+            </view>
+          </view>
+          <view class='reg-w3' >{{ pwdTip }}</view>
+          <view>
+            <button class='reg-btn bg-yelw' style='z-index:2;' bindtap='loginin'>登录</button>
+          </view>
+        </view>
+      </view>
+    </view>
+  </form>
+
+
+</view>

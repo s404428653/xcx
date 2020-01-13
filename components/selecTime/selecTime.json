@@ -1,0 +1,9 @@
+{  
+  "navigationBarBackgroundColor": "#333333",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "选择时间",
+  "backgroundColor": "#ffffff",
+  "backgroundTextStyle": "dark",
+  "component": true,
+  "usingComponents": {}
+}

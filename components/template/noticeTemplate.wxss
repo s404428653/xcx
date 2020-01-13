@@ -1,0 +1,143 @@
+
+
+.container {
+  position: relative;
+  justify-content: flex-start;
+  /* padding-top: 80rpx; */
+  box-sizing: border-box;
+  background: #f7f8fa;
+  opacity: 1;
+  min-height: 100vh;
+}
+
+.hor-line {
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+.tit-line{
+  justify-content: space-between;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+
+/* 通知图片 */
+.notice-titIcon {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 80rpx;
+  height: 80rpx;
+  background: linear-gradient(49deg, rgba(247, 210, 78, 1) 0%, rgba(242, 170, 61, 1) 100%);
+  border-radius: 50%;
+  opacity: 1;
+  margin-right: 22rpx;
+}
+
+.notice-titIcon image {
+  width: 58rpx;
+  height: 58rpx;
+  display: inline-block;
+  margin: auto;
+}
+
+
+/* 标题 */
+.con-tit {
+  font-size: 32rpx;
+  line-height: 32rpx;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 1);
+  letter-spacing: 3rpx;
+  margin-top: 4rpx;
+  margin-bottom: 8rpx;
+}
+/*  */
+.con-sum {
+  color: #000000;
+  font-size: 28rpx;
+  width: 500rpx;
+  font-weight: bold;
+  margin-top: 16rpx;
+  line-height: 28rpx;
+}
+/* 内容 */
+.con-text {
+  font-size: 28rpx;
+  margin-top: 16rpx;
+  color: #666666;
+  width: 500rpx;
+  margin-bottom: 20rpx;
+}
+
+/* 时间 */
+.timesH {
+  font-size: 24rpx;
+  font-weight: 300;
+  color: rgba(153, 153, 153, 1);
+  flex: 1;
+}
+
+/* 同意 */
+.btn-yes {
+  color: #539feb;
+  font-size: 28rpx;
+  position: unset;
+  display: block;
+}
+/* 拒绝 */
+.btn-no {
+  color: #ef2323;
+  margin-right: 36rpx;
+  font-size: 28rpx;
+  position: unset;
+  display: block;
+}
+
+/* 微积分收取 */
+.btn-wjf {
+  color: #539feb;
+  font-size: 28rpx;
+  line-height: 28rpx;
+  text-align: right;
+  background-color: transparent;
+  position: unset;
+  display: block;
+}
+
+.link-txt {
+  color: #539feb;
+  font-size: 24rpx;
+}
+
+.warn-txt {
+  color: #ef2323;
+}
+
+.success-txt {
+  color: #48cc48;
+}
+
+.detail-txt {
+  font-size: 24rpx;
+  font-weight: 300;
+  color: rgba(153, 153, 153, 1);
+}
+
+.btn-sub{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+.operate-status{
+  color: #666666;
+  font-size: 24rpx;
+}

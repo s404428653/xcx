@@ -1,0 +1,253 @@
+/* pages/home/mine/mine.wxss */
+
+.container {
+  background: rgba(247, 248, 250, 1);
+  position: relative;
+  padding-bottom: 170rpx;
+  overflow-y: scroll;
+}
+
+/*浮层*/
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.layer-bg {
+  height: 444rpx;
+  width: 100%;
+  z-index: -1;
+}
+
+/*面板*/
+
+.panel-top {
+  width: 690rpx;
+  margin: 0 auto;
+  position: relative;
+}
+
+.top-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/*信息行*/
+
+.info-line {
+  justify-content: space-between;
+  margin-top: 42rpx;
+  position: relative;
+}
+
+.setting-img{
+  position: absolute;
+  top: 0;
+  right: 16rpx;
+  width: 48rpx;
+  height: 48rpx;
+}
+
+/*头像*/
+
+.avatar-img {
+  width: 144rpx;
+  height: 144rpx;
+  border-radius: 50%;
+  border: 4rpx solid #f0cc9d;
+  background: black;
+  margin: auto;
+  display: block;
+  overflow: hidden;
+}
+
+/*会员等级*/
+
+.rank-txt {
+  color: #ffd428;
+  font-size: 32rpx;
+  margin-left: 4rpx;
+}
+
+/*导航图标*/
+
+.nav-icon {
+  color: white;
+  font-size: 40rpx;
+}
+
+/*链接行*/
+
+.link-line {
+  margin: 0;
+  justify-content: space-between;
+  z-index: 2;
+  font-size: 24rpx;
+  color: #f0cc9d;
+  text-align: center;
+}
+
+.account-txt {
+  border-right: 2rpx dashed #545765;
+  width: 50%;
+  white-space: normal;
+  word-wrap: break-word;
+  color: #f0cc9d;
+}
+
+.phone-txt {
+  width: 50%;
+  white-space: normal;
+  word-wrap: break-word;
+  color: #f0cc9d;
+}
+
+/**/
+
+.panel-img {
+  width: 670rpx;
+  height: 170rpx;
+  margin: 20rpx auto;
+}
+
+/*功能区*/
+
+.panel-menu {
+  width: 690rpx;
+  margin: 0rpx auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background: #fff;
+  box-shadow: 0px 10rpx 30rpx rgba(0, 0, 0, 0.12);
+  border-radius: 8rpx;
+  padding-bottom: 40rpx;
+}
+
+.mine-line-menu {
+  border-radius: 8rpx;
+  position: relative;
+  z-index: 2;
+  width: 690rpx;
+  margin: 36rpx auto 40rpx;
+  padding: 44rpx 0;
+  background: linear-gradient(to bottom, #565862 0%, #484b55, #2c323a 100%);
+}
+
+/*功能按钮*/
+
+.menu-icon {
+  width: 84rpx;
+  height: 84rpx;
+  background: #27282f;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/*内嵌图片*/
+
+.toiletfind {
+  width:110px;
+  height:120px;
+}
+
+.toiletself {
+  margin: 0 5px 0 5px;
+  width:110px;
+  height:120px;
+}
+
+.toiletdo {
+  width:110px;
+  height:120px;
+}
+
+.toiletshow {
+  width:110px;
+  height:120px;
+}
+
+.menu-img {
+  width: 52rpx;
+  height: 52rpx;
+} 
+
+.menu-btn {
+  font-size: 28rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(51, 51, 51, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40rpx 0 0 0;
+  width: 25%;
+}
+
+.menu-name {
+  margin-top: 22rpx;
+  width: 160rpx;
+  text-align: center;
+}
+
+.panel-info {
+  width: 670rpx;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 10rpx 30rpx rgba(0, 0, 0, 0.12);
+  border-radius: 8rpx;
+  margin: 20rpx auto;
+  justify-content: space-between;
+}
+
+.info-icon {
+  width: 58rpx;
+  height: 58rpx;
+  padding: 10rpx 32rpx;
+}
+
+.name-line {
+  margin: 32rpx auto 20rpx;
+  text-align: center;
+  font-size: 32rpx;
+}
+
+.coupon {
+  width: 690rpx;
+  height: 90rpx;
+  margin: 30rpx auto 40rpx auto;
+}
+
+.menu-line {
+  text-align: center;
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; */
+  justify-content: space-around;
+  color: #deb165;
+  font-size: 28rpx;
+}
+
+.menu-line text {
+  font-size: 38rpx;
+  margin-bottom: 18rpx;
+}
+
+.content-box {
+  overflow-y: scroll;
+  z-index: 2;
+  width: 100%;
+}

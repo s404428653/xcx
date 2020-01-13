@@ -1,0 +1,78 @@
+<!--pages/toilet/inspect/inspect.wxml-->
+<import src="/components/template/regTipTemplate/regTipTemplate.wxml" />
+<!-- <scroll-view   scroll-y style="height: {{scnHt}}px" enable-back-to-top  upper-threshold="50"> -->
+<scroll-view class="content-box" scroll-y style='height:{{scnHt - 80}}px;'>
+  
+  <view class='layer'>
+  </view>
+  <!--用户头像及快捷入口-->
+  <view class='panel-top'>
+    <!-- <view style='position:absolute;height:100%;width:100%;'>
+        <image mode='scaleToFill' src='{{ dySty.imgTop.val }}' style='width:100%;height:100%;'></image>
+      </view> -->
+    <view class='search'>
+      <input type='text' placeholder='点击进行条件查询' confirm-type='search' value="{{inputValue}}" bindconfirm='query' bindtap="translate"></input>
+      <image class="" src='../../../image/search.png' bindtap='query'></image>
+    </view>
+    <view class="showlist">
+      <view class="demo1">
+        <image class="picdemo1" src='../../../image/demo1.png'></image>
+        <text class="demo1text1">市级不合格</text>
+        <view class="demo1view2">
+          <text>户    名:康金震\n</text>
+          <text>改造类型:三格式\n</text>
+          <text>辖区单位:行唐县 南桥镇 北桥村</text>
+        </view>  
+      </view>
+      <view class="demo2">
+        <image class="picdemo1" src='../../../image/demo3.png'></image>
+        <text class="demo1text3">县级合格</text>
+        <view class="demo1view2">
+          <text>户    名:刘丽\n</text>
+          <text>改造类型:单坑+集中\n</text>
+          <text>辖区单位:井陉矿区 贾庄镇 贾庄委员会</text>
+        </view>  
+      </view>
+    </view>
+  </view>
+  <!--菜单-->
+  <view class="float {{isRuleTrue?'isRuleShow':'isRuleHide'}} ">
+    <view class="animation-element" animation="{{animation}}">
+      <view class='use'>
+        <view class='iconuse'>辖区单位</view>
+        <input type='text' placeholder='请输入辖区单位'></input>
+      </view>
+      <view class='use'>
+        <view class='iconuse'>户编号</view>
+        <input type='text' placeholder='请输入户编号'></input>
+      </view>
+      <!-- 价格 -->
+      <view class='use'>
+        <view class='iconprice'>改造状态</view>
+        <ul class="useage">
+          <li>未改造</li>
+          <li>改造中</li>
+          <li>已改造</li>
+        </ul>
+        
+      </view>
+      <view class='use'>
+        <view class='iconprice'>改造类型</view>
+        <ul class="useage">
+          <li>三格式</li>
+          <li>水冲式</li>
+          <li>沼气池</li>
+        </ul>
+        <ul class="useage">
+          <li>外建公厕</li>
+          <li>单坑+集中</li>
+        </ul>
+      </view>
+      <view class='buttom'>
+      <view class="animation-reset" >重置</view>
+      <view class="animation-button" bindtap="success">确定</view>
+      </view>
+    </view>
+  </view>
+  <!--底部banner图-->
+</scroll-view>

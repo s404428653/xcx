@@ -1,0 +1,30 @@
+<!--社区选择弹窗组件-->
+<view class='' style='height: {{hg}}px;'>
+  <view id='top-box' style='padding-top: 16rpx;'>
+    <view class='hor-line local-search-line'>
+      <image class='local-icon' src='https://wxhl-image.oos-js.ctyunapi.cn/home_community_icon_local@oosImage%7C60h'></image>
+      <text class='name-area' bindtap='chooseCity'>{{ curCity.name }}</text>
+      <view class='icon-arrow'></view>
+      <view class='hor-line search-box'>
+        <image mode='scaleToFill' style='width:24rpx;height:24rpx;margin-right: 10rpx;' src='https://wxhl-image.oos-js.ctyunapi.cn/home_community_icon_search@oosImage%7C60h'></image>
+        <input bindinput='comutyChange'></input>
+      </view>
+    </view>
+    <view class='last-comtys' wx:if="{{ lastComtys && lastComtys.length }}">
+      <view class='hor-line' style='font-size: 26rpx;justify-content: space-between;'>
+        <view class='hor-line'>
+          <image mode='scaleToFill' class='icon-cmty' src='https://wxhl-image.oos-js.ctyunapi.cn/home_community_icon_home@oosImage%7C60h'></image>
+          <text>我的社区</text>
+        </view>
+        <!-- <text class='addCmuty' bindtap='addCommunity'>添加社区</text> -->
+      </view>
+      <view wx:for="{{ lastComtys }}" wx:key="id" class='hor-line cmty-line' style='margin-left: 30rpx;' data-res="{{ item }}" bindtap='communityResult'>
+        <text>{{ item.communityName }}</text>
+        <view wx:if="{{ item.tag == 0 }}" class='{{ item.tag == 0? "tag1": "tag2" }}'>家</view>
+        <view wx:elif="{{ item.tag == 1 }}" class='{{ item.tag == 1? "tag1": "tag2" }}'>单位</view>
+        <view wx:elif="{{ item.tag == 2 }}" class='{{ item.tag == 1? "tag1": "tag2" }}'>其他</view>
+      </view>
+    </view>
+  </view>
+  <local-search style="width: 100%;" listData="{{ cumtys }}" hg="{{ scrollHg }}" bind:result="communityResult"></local-search>
+</view>

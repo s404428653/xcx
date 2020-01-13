@@ -1,0 +1,357 @@
+<!-- 收到邀请信息 101.102.103-->
+<template name="yq10">
+  <!-- 邀请通知模板 113-->
+  <view class="hor-line">
+    <view class="notice-titIcon">
+      <image src="/image/notice/notice-warn.png" />
+    </view>
+    <view>
+      <!-- 标题 -->
+      <view class="hor-line tit-line">
+        <view class="con-tit">{{item.title}}</view>
+        <view class="operate-status">{{ item.operateStatus == 3? "已同意": item.operateStatus == 4? "已拒绝": ""}}</view>
+      </view>
+      <!-- 摘要 -->
+      <view wx:if="{{ item.summary }}" class="con-sum">{{item.summary||""}}</view>
+      <!-- 内容 -->
+      <view class="con-text">{{item.text}} </view>
+      <view>
+        <view class="hor-line">
+          <view class="timesH">{{ item.createDate }}</view>
+          <view class="hor-line flex-between" wx:if="{{ item.operateStatus != 3 && item.operateStatus != 4 && item.operateStatus != 5}}">
+
+            <view class="btn-wjf btn-no" data-item="{{ item  }}" bindtap="doReject">拒绝</view>
+            <view class="btn-wjf" data-item="{{ item  }}" bindtap="doAgree">同意</view>
+
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<!-- 邀请正常履约结束104 -->
+<template name="yq13">
+  <view class="hor-line">
+    <view class="notice-titIcon">
+      <image src="/image/notice/notice-warn.png" />
+    </view>
+    <view>
+      <!-- 标题 -->
+      <view class="con-tit">{{item.typeName}}</view>
+      <!-- 摘要 -->
+      <view class="con-sum">{{item.title}}</view>
+      <!-- 内容 -->
+      <view class="con-text">{{item.text}} </view>
+      <view>
+        <!--履约结束（微积分收取）： 13 -->
+        <view wx:if="{{ item.isRead }}" class="btn-wjf operate-status"></view>
+        <view wx:else class="btn-wjf" data-item="{{ item }}" capture-bind:tap="wjfCollec">微积分收取</view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<!-- 邀请被拒绝,重新邀请151 -->
+<template name="yq20">
+  <view class="hor-line">
+    <view class="notice-titIcon">
+      <image src="/image/notice/notice-warn.png" />
+    </view>
+    <view>
+      <!-- 标题 -->
+      <view class="con-tit">{{item.title}}</view>
+      <!-- 摘要 -->
+      <view wx:if="{{ item.summary }}" class="con-sum">{{item.summary}}</view>
+      <!-- 内容 -->
+      <view class="con-text">{{item.text}} </view>
+      <view class="hor-line">
+        <view wx:if="{{ item.createDate }}" class="timesH">{{ item.createDate }}</view>
+        <view class="btn-wjf" data-item="{{ item }}" capture-bind:tap="inviteAgain">重新邀请</view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<!-- 邀请默认-->
+<template name="yqmr">
+  <view class="hor-line">
+    <view class="notice-titIcon">
+      <image src="/image/notice/notice-warn.png" />
+    </view>
+    <view>
+      <!-- 类型 -->
+      <view wx:if="{{ item.typeName }}" class="con-tit">{{item.typeName}}</view>
+      <!-- 标题 -->
+      <view wx:elif="{{ item.title }}" class="con-sum">{{item.title}}</view>
+      <!-- 摘要 -->
+      <view wx:if="{{ item.summary }}" class="con-sum">{{item.summary}}</view>
+      <!-- 内容 -->
+      <view class="con-text">{{item.text}} </view>
+      <view>
+        <view class="hor-line">
+          <view wx:if="{{ item.createDate }}" class="timesH">{{ item.createDate }}</view>
+          <view class="hor-line flex-between">
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
+
+
+<!-- 访问收到申请信息 201.202.203-->
+<template name="fw10">
+  <!-- 访问通知模板 210-->
+  <view class="hor-line">
+    <view class="notice-titIcon">
+      <image src="/image/notice/notice-warn.png" />
+    </view>
+    <view>
+      <!-- 标题 -->
+      <view class="hor-line tit-line">
+        <view class="con-tit">{{item.title}}</view>
+        <view class="operate-status">{{ item.operateStatus == 3? "已同意": item.operateStatus == 4? "已拒绝": ""}}</view>
+      </view>
+      <!-- 摘要 -->
+      <view wx:if="{{ item.summary }}" class="con-sum">{{item.summary}}</view>
+      <!-- 内容 -->
+      <view class="con-text">{{item.text}} </view>
+      <view>
+        <view class="hor-line">
+          <view class="timesH">{{ item.createDate }}</view>
+          <view class="hor-line flex-between" wx:if="{{ item.operateStatus != 3 && item.operateStatus != 4 }}">
+
+            <view class="btn-wjf btn-no" data-item="{{ item  }}" bindtap="doReject">拒绝</view>
+            <view class="btn-wjf" data-item="{{ item  }}" bindtap="doAgree">同意</view>
+
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<!-- 访问被拒绝、未履约 254.255-->
+<template name="fw20">
+  <!-- 访问通知模板 212-->
+  <view class="hor-line">
+    <view class="notice-titIcon">
+      <image src="/image/notice/notice-warn.png" />
+    </view>
+    <view>
+      <!-- 标题 -->
+      <view class="con-tit">{{item.title}}</view>
+      <!-- 摘要 -->
+      <view wx:if="{{ item.summary }}" class="con-sum">{{item.summary}}</view>
+      <!-- 内容 -->
+      <view class="con-text">{{item.text}} </view>
+
+      <view>
+        <!--申请人被拒绝、未履约： -->
+        <view class="hor-line">
+          <view class="timesH">{{ item.createDate }}</view>
+          <view class="hor-line flex-between">
+            <view class="btn-wjf" data-item="{{ item }}" capture-bind:tap="applyAgain">重新申请</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<!--访问正常履约结束 257-->
+<template name="fw21">
+  <view class="hor-line">
+    <view class="notice-titIcon">
+      <image src="/image/notice/notice-warn.png" />
+    </view>
+    <view>
+      <!-- 标题 -->
+      <view class="con-tit">{{item.title}}</view>
+      <!-- 摘要 -->
+      <view wx:if="{{ item.summary }}" class="con-sum">{{item.summary}}</view>
+      <!-- 内容 -->
+      <view class="con-text">{{item.text}} </view>
+
+      <view>
+        <!--收到邀请信息（拒绝同意） -->
+        <view class="hor-line">
+          <view class="timesH">{{ item.createDate }}</view>
+          <view class="hor-line flex-between">
+            <view wx:if="{{ item.isRead }}" class="btn-wjf operate-status"></view>
+            <view wx:else class="btn-wjf" data-item="{{ item }}" capture-bind:tap="wjfCollec">微积分收取</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<!-- 访问通知模板 -->
+<template name="fwmr">
+  <!--申请通知模板-->
+  <view class="hor-line">
+    <view class="notice-titIcon">
+      <image src="/image/notice/notice-warn.png" />
+    </view>
+    <view>
+      <!-- 标题 -->
+      <view class="con-tit">{{item.title}}</view>
+      <!-- 摘要 -->
+      <view wx:if="{{ item.summary }}" class="con-sum">{{item.summary}}</view>
+      <!-- 内容 -->
+      <view class="con-text">{{item.text}} </view>
+      <view>
+        <view class="hor-line">
+          <view class="timesH">{{ item.createDate }}</view>
+          <view class="hor-line flex-between">
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
+
+
+<!-- 预约撤销预约成功、 未履约 304-->
+<template name="yy10">
+  <!-- 未履约-->
+  <view class="hor-line">
+    <view class="notice-titIcon">
+      <image src="/image/notice/notice-warn.png" />
+    </view>
+    <view>
+      <!-- 标题 -->
+      <view class="con-tit">{{item.title}}</view>
+      <!-- 摘要 -->
+      <view wx:if="{{ item.summary }}" class="con-sum">{{item.summary}}</view>
+      <!-- 内容 -->
+      <view class="con-text">{{item.text}} </view>
+
+      <view>
+        <!--撤销预约成功、未履约-->
+        <view class="hor-line">
+          <view class="timesH">{{ item.createDate }}</view>
+          <view class="hor-line flex-between">
+            <view class="btn-wjf" data-item="{{ item }}" bindtap="subScribAgain">重新预约</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<!-- 预约停车超时/预扣微积分不足未结算 307-->
+<template name="yy11">
+  <!-- 停车超时/预扣微积分不足未结算-->
+  <view class="hor-line">
+    <view class="notice-titIcon">
+      <image src="/image/notice/notice-warn.png" />
+    </view>
+    <view>
+      <!-- 标题 -->
+      <view class="con-tit">{{item.title}}</view>
+      <!-- 摘要 -->
+      <view wx:if="{{ item.summary }}" class="con-sum">{{item.summary}}</view>
+      <!-- 内容 -->
+      <view class="con-text">{{item.text}} </view>
+
+      <view>
+        <!--停车超时/预扣微积分不足未结算 -->
+        <view class="hor-line">
+          <view class="timesH">{{ item.createDate }}</view>
+          <view class="hor-line flex-between">
+            <view class="btn-wjf" data-item="{{ item }}" capture-bind:tap="wjfBuJiao">补缴微积分</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<!-- 预约履约结束点击“确定”且微积分结算完成 308-->
+<template name="yy12">
+  <!-- 撤销预约成功、未履约-->
+  <view class="hor-line">
+    <view class="notice-titIcon">
+      <image src="/image/notice/notice-warn.png" />
+    </view>
+    <view>
+      <!-- 标题 -->
+      <view class="con-tit">{{item.title}}</view>
+      <!-- 摘要 -->
+      <view wx:if="{{ item.summary }}" class="con-sum">{{item.summary}}</view>
+      <!-- 内容 -->
+      <view class="con-text">{{item.text}} </view>
+
+      <view>
+        <!--预约信息（拒绝同意 -->
+        <view class="hor-line">
+          <view class="timesH">{{ item.createDate }}</view>
+            <view wx:if="{{ item.isRead }}" class="btn-wjf operate-status"></view>
+            <view wx:else class="btn-wjf" data-item="{{ item }}" capture-bind:tap="wjfCollec">微积分领取</view>
+          
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<!-- 预约履约结束超时/正常 305-->
+<template name="yy13">
+  <!-- 预约模板-->
+  <view class="hor-line">
+    <view class="notice-titIcon">
+      <image src="/image/notice/notice-warn.png" />
+    </view>
+    <view>
+      <!-- 标题 -->
+      <view class="con-tit">{{item.title}}</view>
+      
+      <!-- 摘要 -->
+      <view wx:if="{{ item.summary }}" class="con-sum">{{item.summary}}</view>
+      <!-- 内容 -->
+      <view class="con-text">{{item.text}} </view>
+      <view>
+        <!--履约结束超时/正常-->
+        <view class="hor-line">
+          <view class="timesH">{{ item.createDate }}</view>
+          <view class="hor-line flex-between" wx:if="{{ item.operateStatus != 6 }}">
+
+            <view class="btn-wjf btn-no" data-item="{{ item  }}" bindtap="fangQi">放弃</view>
+            <view class="btn-wjf" data-item="{{ item  }}" bindtap="shouQu">收取</view>
+
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<!-- 预约默认 -->
+<template name="yymr">
+  <!-- 预约模板 默认-->
+  <view class="hor-line">
+    <view class="notice-titIcon">
+      <image src="/image/notice/notice-warn.png" />
+    </view>
+    <view>
+      <!-- 标题 -->
+      <view class="con-tit">{{item.title}}</view>
+      <!-- 摘要 -->
+      <view wx:if="{{ item.summary }}" class="con-sum">{{item.summary}}</view>
+      <!-- 内容 -->
+      <view class="con-text">{{item.text}} </view>
+
+      <view>
+        <view class="hor-line">
+          <view class="timesH">{{ item.createDate }}</view>
+          <view class="hor-line flex-between">
+
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

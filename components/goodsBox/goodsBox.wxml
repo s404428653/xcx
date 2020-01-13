@@ -1,0 +1,18 @@
+<!--商品展示框-->
+<view class='box' style='width: {{ wd }}; height: {{ hg }};position:relative;'>
+  <image mode='scaleToFill' class='goods-img' src='{{ goods.img }}' data-id='{{goods.id}}' bindtap='navDetail'></image>
+  <view class='' style=''>
+    <view class='hor-line txt-line'>
+      <text class='name'><text class='tag'>{{ goods.tag }}</text>{{ goods.name }}</text>
+    </view>
+    <view class='hor-line price-line' style=''>
+      <text class='price'>{{ goods.price }}</text>
+      <image mode='scaleToFill' class='car-icon' data-id='{{goods.id}}' src='../../image/components/zl_icon_shop_car.png' bindtap='addShopCar'></image>
+    </view>
+  </view>
+  <view class='tag-sale'>
+    <image src='{{ tagImg }}' style='width:100%; height: 100%;'></image>
+    <text>{{ tagTxt }}</text>
+  </view>
+  
+</view>

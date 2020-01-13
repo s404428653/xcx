@@ -1,0 +1,53 @@
+<!--未注册提示模板-->
+<template name="no-reg">
+  <!-- 未注册提示模板 -->
+  <view class="tmp-layer" bindtap="switchRegTip">
+    <view class="dark-layer">
+    </view>
+    <image class="sys-titIcon" src="https://hb-wxhl-image.oos-hesjz.ctyunapi.cn/WXAPP/770fba244a7d49b7a7af72b83b600923.png" />
+    <view class="btn-go-reg" catchtap="navRegPage">立即注册</view>
+    <view class="btn-go-login" catchtap="navLoginPage">已有账号？去登录</view>
+  </view>
+</template>
+
+
+
+<!--积分规则提示框-->
+<template name="point-rule">
+  <!-- 未注册提示模板 -->
+  <view class="tmp-layer" catchtap="switchRule">
+    <view class="dark-layer">
+    </view>
+    <view class="rul-box">
+      <image class="icon-close" src="/image/info/info-icon-close.png" />  
+      <image class="rul-ld" src="/image/visit/yuyue-LD.png" />
+      <view class="rul-tit">千迹微积分规则</view>
+      <text class="txt-rule">
+1、千迹会员成功注册，奖励千迹微积分100分。
+2、新增车位奖励千迹微积分100分/每车位，车位不可重复。
+3、新增车辆奖励千迹微积分100分/每车辆，车辆不可重复。
+4、车位预约成功，奖励千迹微积分5分/次。
+5、邀请来访成功，奖励千迹微积分5分/次。
+6、申请到访成功，奖励千迹微积分5分/次。
+7、千迹停车场不设置免费停车时段，车位预约成功按100分/小时预收千迹微积分，时长不足一小时按一小时计算。
+8、千迹会员在千迹平台获得的千迹微积分有效期为24小时（含），超过24小时未选择收取则千迹微积分失效，千迹微积分失效后无法计入千迹会员钱包。
+9、车位预约成功后，按车位预约单填写的车位预约时长全额收取千迹微积分。履约结束千迹微积分结算按车位预约单填写的预约起始时间至车辆出库时间的时长计算。
+10、车位预约成功但车位预约关联车辆未履约，不退还车位预约成功后按车位预约时长全额收取的预收千迹微积分。
+11、履约结束时间未超过车位预约单填写的预约截止时间，未选择收取车位预约成功后按车位预约时长全额收取的预收千迹微积分应退还的剩余千迹微积分，履约结束180天后视为千迹会员放弃应退还的千迹微积分。
+    </text>
+      <view class="rul-footer">千迹微积分最终解释权归千迹预约所有</view>
+    </view>
+  </view>
+</template>
+
+
+<!--缺省模板-->
+<template name="no-data">
+  <view class="hor-line tip-box">
+    <view class="line-tip"></view>
+    <image class="no-data" style="width:{{noData.width? noData.width:''}}" mode="widthFix" src="{{ noData.img }}"></image>
+    <view class="line-tip"></view>
+  </view>
+  <view class="txt-tip">{{ noData.msg }}</view>
+  <image class="bottom-img" mode="widthFix" src="https://hb-wxhl-image.oos-hesjz.ctyunapi.cn/WXAPP/0a9c050f327c41d2af5c6198da063139.png"></image>
+</template>

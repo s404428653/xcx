@@ -1,0 +1,11 @@
+<!--中粮入口图片组合-->
+<view class='hor-line' style='justify-content: flex-start;'>
+  <image class='img1' data-id='1' bindtap='imgClick'  src='{{ img1 }}'></image>
+  <view class='container' style='margin-left:30rpx;'>
+    <view class='hor-line' style='justify-content: flex-start;'>
+      <image class='img2' data-id='2' bindtap='imgClick'  src='{{ img2 }}'></image>
+      <image class='img2' data-id='3' bindtap='imgClick' style='margin-left:20rpx;'  src='{{ img3 }}'></image>
+    </view>
+    <image class='img3' data-id='4' bindtap='imgClick' style='margin-top:20rpx;'  src='{{ img4 }}'></image>
+  </view>
+</view>

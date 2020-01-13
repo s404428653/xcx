@@ -1,0 +1,189 @@
+/* pages/home/mine/mine.wxss */
+
+.container {
+  background: rgba(247, 248, 250, 1);
+  position: relative;
+  padding-bottom: 170rpx;
+  overflow-y: scroll;
+}
+
+.layer{
+  display: flex;
+}
+
+.search
+{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  width:70%;
+  height:60rpx;
+  background-color: gainsboro;
+  margin-top: 5%;
+  border:1rpx solid whitesmoke;
+  border-radius: 15px;
+  margin: 5px 0px 0px 30px;
+}
+
+/* 搜索框提示文字样式 */
+.search input
+{
+  font-size:27rpx;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left:30rpx; 
+}
+
+/* 搜索框小图标 */
+.search image
+{ 
+  width:40rpx;
+  height:40rpx;
+  padding-right:20rpx;
+  
+}
+
+.searchButton{
+  width:10px;
+  font-family:PingFang SC;
+  font-weight:250;
+  color:rgba(51,51,51,1);
+  background-color: darkgoldenrod;
+}
+
+.demo1{
+  width:345px;
+  height:135px;
+  background:rgba(255,255,255,1);
+  border-radius:10px;
+  margin:26px 15px 7.5px;
+  border: 1px solid rgba(112, 112, 112, 0.479);
+}
+
+.demo2{
+  width:345px;
+  height:135px;
+  background:rgba(255,255,255,1);
+  border-radius:10px;
+  margin:7.5px 15px 7.5px;
+  border: 1px solid rgba(112, 112, 112, 0.479);
+}
+
+.picdemo1{
+  width:28px;
+  height:28px;
+  margin: 15px 0 0 15px;
+}
+
+.demo1text1{
+  width:38px;
+  height:12.5px;
+  font-size:13px;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,47,47,1);
+  margin: 18px 0 0 10.5px;
+}
+
+.demo1text2{
+  width:38px;
+  height:12.5px;
+  font-size:13px;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(55,218,89,1);
+  margin: 18px 0 0 10.5px;
+}
+
+.demo1text3{
+  width:38px;
+  height:12.5px;
+  font-size:13px;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(47,135,255,1);
+  margin: 18px 0 0 10.5px;
+}
+
+.demo1view2{
+  width:400px;
+  height:100px;
+  margin:10px 0 0 14px;
+}
+.isRuleShow {
+  display: block;
+}
+ 
+.isRuleHide {
+  display: none;
+}
+.float {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  top: 0;
+  left: 0;
+  /* margin-top:80rpx; */
+}
+ 
+ 
+ 
+ 
+ 
+.iconuse {
+  margin-left: 11rpx;
+}
+ 
+.iconprice {
+  margin-left: 11rpx;
+}
+ 
+.animation-element {
+  width: 580rpx;
+  height: 1175rpx;
+   background-color: #ffffff; 
+  border: 1px solid #f3f0f0;
+  position: absolute;
+  right: -572rpx;
+}
+ 
+ 
+ 
+.useage {
+  height: 40rpx;
+}
+ 
+.useage li {
+  width: 177rpx;
+  margin: 12rpx 7rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #f3f0f0;
+  border-radius: 15rpx;
+  font-size: 30rpx;
+}
+ 
+.buttom{
+  position: fixed;
+  bottom: 0;
+}
+.animation-reset{
+float: left;
+ line-height: 2;
+  width: 260rpx;
+  margin: 15rpx 12rpx;
+  border: 1px solid #f3f0f0;
+  text-align: center;
+}
+.animation-button{
+float: left;
+ line-height: 2;
+  width: 260rpx;
+  margin: 15rpx 12rpx;
+  border: 1px solid #f3f0f0;
+  text-align: center;
+}

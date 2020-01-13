@@ -1,0 +1,35 @@
+<import src="/components/template/regTipTemplate/regTipTemplate.wxml" />
+<!-- <scroll-view   scroll-y style="height: {{scnHt}}px" enable-back-to-top  upper-threshold="50"> -->
+<scroll-view class="content-box" scroll-y style='height:{{scnHt - 80}}px;'>
+  
+  <view class='layer'>
+  </view>
+  <!--用户头像及快捷入口-->
+  <view class='panel-top'>
+    <!-- <view style='position:absolute;height:100%;width:100%;'>
+        <image mode='scaleToFill' src='{{ dySty.imgTop.val }}' style='width:100%;height:100%;'></image>
+      </view> -->
+    <view class='top-box'>
+      <view class='info-line'>
+        <image class='avatar-img' type="userAvatarUrl" src="" bindtap="navPersonalInfo"></image>
+        <view class="name-line" style='color:#F0CC9D'>
+          <text bindtap="navPersonalInfo" wx:if='{{!userInfo.userName}}'>刘处长</text>
+          <text class='rank-txt'><text style='font-size: 16rpx;'>用户级别：市级</text></text>
+        </view>
+        <view class='hor-line link-line'>
+        </view>
+      </view>
+      <view display="flexed">
+      <image class="toiletfind" src="../../../image/toiletfind.png" bindtap="toiletrecord"></image>
+      <image class="toiletself" src="../../../image/toiletself.png" bindtap="toiletsign"></image>
+      <image class="toiletdo" src="../../../image/toiletdo.png" bindtap="toiletcheck"></image>
+      </view>
+      <view>
+      <image class="toiletshow" src="../../../image/toiletshow.png" bindtap="toiletinspect"></image>
+      </view>
+    </view>
+  </view>
+  <!--菜单-->
+  
+  <!--底部banner图-->
+</scroll-view>

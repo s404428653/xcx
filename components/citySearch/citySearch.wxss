@@ -1,0 +1,51 @@
+
+
+/*水平行*/
+
+.hor-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/*社区检索行*/
+
+.local-search-line {
+  border-bottom: 2rpx solid rgba(228, 228, 228, 1);
+  padding-bottom: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+.icon-arrow {
+  width: 0;
+  height: 0;
+  border-width: 10rpx;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+  margin-left: 10rpx;
+}
+
+.search-box {
+  width: 500rpx;
+  height: 50rpx;
+  background: rgba(228, 228, 228, 1);
+  opacity: 1;
+  font-size: 28rpx;
+  border-radius: 8rpx;
+  align-items: center;
+  margin-left: 24rpx;
+  padding-left: 20rpx;
+}
+
+.local-icon {
+  width: 36rpx;
+  height: 36rpx;
+  margin: 12rpx 10rpx 12rpx 20rpx;
+}
+
+/*地区文字*/
+
+.name-area {
+  font-size: 28rpx;
+}

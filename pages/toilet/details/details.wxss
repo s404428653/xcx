@@ -1,0 +1,39 @@
+.demo1{
+  margin:20px;
+}
+.demo2{
+  border: 1px solid rgba(112, 112, 112, 0.479);
+}
+
+.toiletfind {
+  width:110px;
+  height:120px;
+}
+
+.toiletself {
+  margin: 0 5px 0 5px;
+  width:110px;
+  height:120px;
+}
+
+.toiletdo {
+  width:110px;
+  height:120px;
+}
+
+.toiletshow {
+  width:110px;
+  height:120px;
+}
+
+.pic1{
+  margin:0 0 0 17px;
+}
+
+.pic2{
+  margin:0 0 0 40px;
+}
+
+.pic3{
+  margin:0 0 0 45px;
+}

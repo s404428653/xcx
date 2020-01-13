@@ -1,0 +1,12 @@
+<!--学习显示框-->
+<view class='hor-line' data-id='{{course.id}}' bindtap='clickCourse'>
+  <image mode='scaleToFill' class='course-img' src='{{ course.img }}'></image>
+  <view class='container'>
+    <view class='cour-name'>{{ course.name }}</view>
+    <view class='hor-line' style='width:100%; justify-content: flex-start;'>
+      <text class='cour-tip'>{{ course.tip }}</text>
+      <text class='cour-tip' style='margin-left: 18rpx;'>{{ course.count }}评论</text>
+      <text class='cour-tip' style='margin-left: 18rpx;'>{{ course.dat }}</text>
+    </view>
+  </view>
+</view>

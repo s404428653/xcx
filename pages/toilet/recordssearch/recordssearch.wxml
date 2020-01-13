@@ -1,0 +1,37 @@
+<view class="">
+    <view >
+      <view class='use'>
+        <view class='iconuse'>辖区单位</view>
+        <input type='text' placeholder='请输入辖区单位'></input>
+      </view>
+      <view class='use'>
+        <view class='iconuse'>户编号</view>
+        <input type='text' placeholder='请输入户编号'></input>
+      </view>
+      <!-- 价格 -->
+      <view class='use'>
+        <view class='iconprice'>改造状态</view>
+        <ul class="useage">
+          <li>未改造</li>
+          <li>改造中</li>
+          <li>已改造</li>
+        </ul>
+        
+      </view>
+      <view class='use'>
+        <view class='iconprice'>改造类型</view>
+        <ul class="useage">
+          <li>三格式</li>
+          <li>水冲式</li>
+          <li>沼气池</li>
+        </ul>
+        <ul class="useage">
+          <li>外建公厕</li>
+          <li>单坑+集中</li>
+        </ul>
+      </view>
+      <view class='buttom'>
+      <view class="animation-button" bindtap="success">确定</view>
+      </view>
+    </view>
+  </view>
